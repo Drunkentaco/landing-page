@@ -1,6 +1,8 @@
 body {
     display: flex;
     flex-direction: column;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .hero,
@@ -8,24 +10,24 @@ body {
     background-color: #1f2937;
 }
 
-.text {
-    font-size: 48px;
-    color: #f9faf8;
-    font-weight: 900;
-}
-
 .second,
-ul,
-.footer{
+a,
+.footer
+/*add class to the product section*/{
     font-size: 18px;
     color: #e5e7eb;
 }
 
 .header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin: 10px 400px;
 }
 
+.logo {
+    font-size: 24px;
+    color:#f9faf8;
+}
 ul {
     padding: 0;
     margin: 0;
@@ -35,13 +37,77 @@ ul {
     gap: 10px;
 }
 
-.logo {
-    font-size: 24px;
-    color: #f9faf8;
+a{
+    text-decoration: none;
+}
+.title{
+    display: flex;
+    margin: 100px 400px;
+    justify-content: space-between;
+    gap: 20px
 }
 
-.main{
+.main {
+    font-size: 48px;
+    color: #f9faf8;
+    font-weight: 900;
+}
+
+.text {
+    height: 250px;
+    width: 450px;
+    flex-grow: 0;
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.title img {
+    height: 250px;
+    width: 450px;
+    flex-grow: 0;
+}
+
+.button {
+    flex-shrink: 0;
+    margin: 8px 0;
+    border-radius: 25px;
+    padding: 5px 25px;
+    max-width: 120px;
+    text-align: center;
+    color: white;
+}
+
+.special{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 400px;
+}
+
+.info{
+    font-size: 36px;
+    color: #1f2937;
+    font-weight: 900;
+    margin-bottom: 50px;
+}
+
+.recipes{
+    display: flex;
+    flex-shrink:0;
+    gap: 50px;
+}
+
+.recipes div{
+    max-width: 150px;
+}
+
+.recipes img {
+    height: auto;
+    width: 150px;
+    border-style: solid;
+    border-color: #3882f6;
+    border-radius: 10px;
 }
 .quote {
     background-color: #e5e7eb;
